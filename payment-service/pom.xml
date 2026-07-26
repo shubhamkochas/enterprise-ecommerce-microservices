@@ -86,6 +86,14 @@
 			<version>28.2.0</version>
 		</dependency>
 
+		<!-- Gson: explicitly declared because stripe-java's ApiResource references
+		     com.google.gson.Gson and it may not resolve transitively in all IDEs/build tools -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+
 		<!-- Flyway -->
 		<dependency>
 			<groupId>org.flywaydb</groupId>
